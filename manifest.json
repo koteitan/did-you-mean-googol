@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Did You Mean: Googol",
+  "version": "1.0.0",
+  "description": "Chrome extension that shows 'did you mean: googol' when you search 'google'",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*", "https://www.google.co.jp/search*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": []
+}
